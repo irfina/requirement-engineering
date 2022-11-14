@@ -1,0 +1,29 @@
+server.port={PORT:8080}
+
+#logging.level.web=INFO
+#logging.level.org.springframework.web=DEBUG
+#logging.level.org.springframework.orm.jpa=DEBUG
+#logging.level.org.springframework.transaction=DEBUG
+
+# spring.main.web-application-type=NONE
+
+# set token valid to 10 hours
+jwt.token.valid.duration = 36000000
+jwt.secret = Hello World
+
+## PostgreSQL
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+
+## Connection Pool
+spring.datasource.hikari.maximumPoolSize=3
+spring.datasource.hikari.autoCommit=false
+# Set maxLifeTime 10 menit
+spring.datasource.hikari.maxLifetime=600000
+
+spring.jpa.show-sql=true
+
+# disable api-docs
+springdoc.api-docs.enabled=true
